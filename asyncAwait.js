@@ -1,22 +1,38 @@
 function a(){
-    return new Promise((resolve=>{
+    return new Promise((resolve, reject)=>{
         setTimeout(() => {
-            resolve("A");
-        }, 4000);
-    }))
+            resolve("A Apple");
+        }, 200);
+    })
 }
 
 function b(){
     return new Promise((resolve=>{
         setTimeout(() => {
-            resolve('B');
-        }, 4000);
+            resolve('B Ball');
+        }, 1000);
     }))
 }
 
+function c(){
+    return new Promise((resolve=>{
+        setTimeout(() => {
+            resolve("C Cat")
+        }, 500);
+    }))
+}
 
+async function alphabet(){
+    const A = await a();
+    const B = await b();
+    const C = await c();
 
+    console.log(A);
+    console.log(B);
+    console.log(C);
+};
 
+alphabet();
 
 
 // async function c(){
