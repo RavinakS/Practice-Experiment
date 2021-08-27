@@ -29,7 +29,7 @@ function b(){
 // c().then((value)=>{
 //     console.log("Inside then.");
 //     console.log(value);
-// }).catch((err)=>{
+// }).catch((err)=>{ //can't handle error with catch which is created in async function for this we have to use try-catch.
 //     console.log("Inside catch!");
 //     console.log(err);
 // })
