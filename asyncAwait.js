@@ -1,5 +1,21 @@
-async function hello(){
-    return "Ravina!"
-};
+function a(){
+    return Promise.resolve('a')
+}
 
-hello().then(console.log); // shorthand
+async function b(){
+    return Promise.resolve('b')
+}
+
+async function c(){
+    return 'c'
+}
+
+console.log(a())
+console.log(b())
+console.log(c())
+
+// async function hello(){
+//     return "Ravina!"
+// };
+
+// hello().then(console.log); // shorthand
