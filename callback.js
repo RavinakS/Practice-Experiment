@@ -7,15 +7,20 @@ function multiply(a, b){
 };
 
 const calc = function (num1, num2, callback){
-    if(typeof callback === 'function'){
+    try{
         return callback(num1, num2);
+    }catch{
+        return `Wrong 'callback'!!`
     }
+    // if(cb && typeof callback === 'function'){
+    //     return callback(num1, num2);
+    // }
     // else{
     //     return `Wrong 'callback' !!`
     // }
 };
 
-console.log(calc(2, 3, mutiply));
+console.log(calc(2, 3, wrongCallback));
 
 
 // const calc = function (num1, num2, calcType){
