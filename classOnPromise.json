@@ -1,0 +1,6 @@
+{
+    "users": [
+        {"name": "Ravina", "skills": ["node.js", "mysql"]}, 
+        {"name": "kavita", "skills": ["js", "python", "mysql"]}
+    ]
+}
